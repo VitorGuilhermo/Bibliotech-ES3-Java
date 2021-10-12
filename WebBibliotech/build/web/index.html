@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bibliotech</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+        <script src="js/genero.js" type="text/javascript"></script>
+    </head>
+    <body onload="exibir()" class="main">
+
+        <div class="centraliza titulo">
+            <div id="alinha">
+                <h1>Gerenciar Gênero</h1>
+            </div>
+        </div>
+        <div class="alert alert-danger alert-dismissible" id="erro" style="display:none">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            <strong>Erro!</strong> <span id="erromsg"></span>
+        </div>
+
+        <div class="divCont">
+            <form id="fdados" name="dados" onsubmit="gravar()">
+
+                <div class="form-group espacamento">
+                    <label>Código:</label><input type="text" name="cod" value="" readonly class="form-control"/>
+
+                    <label style="margin-top: 20px;" for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" class="form-control" value="" placeholder="Digite o nome">
+
+                    <div class="centraliza">
+                        <button type="submit" class="btn btn-primary btn-lg btn-block" value="CADASTRAR" id="btsubmit">CADASTRAR</button>
+                    </div>
+                </div>
+
+            </form>
+
+            <hr id="divisor">
+
+            <form name="pesquisa" onsubmit="exibir()">
+                <div class="form-row align-items-center" style="margin-left: 5%;">
+                    <div class="col-sm-10 my-1">
+                        <label class="sr-only" for="inlineFormInputName">Nome</label>
+                        <input type="text" name="filtro" id="filtro" size="120" placeholder="Informe parte do nome do gênero" class="form-control">
+                    </div>
+                    <div class="col-auto my-1">
+                        <button type="submit" name="bpesq" value="pesquisar" class="btn btn-primary">Pesquisar</button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="divTable">
+                <table class="table" >
+                    <thead class="colunas">
+                        <tr><th>Código</th><th>Nome</th></tr>
+                    </thead>
+                    <tbody id="preview">                
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>

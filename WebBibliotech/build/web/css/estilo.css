@@ -1,0 +1,56 @@
+body{
+    height: 100%;    
+    background-color: #eeeef3;
+}
+.main{
+    width: 80%;
+    margin: 0 auto;
+    color: #1e93ff;
+}
+.divCont{
+    background-color:  #fefefe;
+    border-radius: 5px;
+    padding: 5%;
+    font-family: Arial, sans-serif;
+    font-size: 18pt;
+    text-align: justify;
+}
+.divCont form div{
+    margin-bottom: 30px;
+}
+.centraliza{
+    text-align: center;
+    margin-top: 30px;
+}
+.titulo{
+    font-family: 'Fredoka One', cursive;
+    margin-bottom: 50px;
+}
+.titulo h1{
+    font-size: 32pt;
+    color: #1e93ff;
+}
+#nomes{
+    font-size: 12pt;
+    color: #006BDE;
+}
+
+#alinha img, h1{
+    display: inline-block;
+    margin-right: 2%;
+}
+
+#divisor{
+    margin: 7% 25% 7% 25%;
+    background-color: #21222c;
+}
+
+.divTable{
+    height:700px; 
+    overflow: auto;
+    margin-bottom: 10%;
+    color: black;
+}
+.colunas{
+    font-size: 14pt;
+}
